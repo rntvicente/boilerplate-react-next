@@ -1,11 +1,27 @@
 {
+  "presets": [
+    "next/babel"
+  ],
   "plugins": [
     [
       "babel-plugin-styled-components",
       {
-        "ssr": true
+        "ssr": true,
+        "displayName": true
       }
     ]
   ],
-  "presets": ["next/babel"]
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "ssr": false,
+            "displayName": false
+          }
+        ]
+      ]
+    }
+  }
 }
