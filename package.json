@@ -9,6 +9,7 @@
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
     "test:watch": "npm test -- --watchAll",
+    "generate": "npx plop --plopfile ./generators/plopfiles.js",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public"
   },
@@ -36,6 +37,7 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
     "jest": "^26.1.0",
-    "jest-styled-components": "^7.0.2"
+    "jest-styled-components": "^7.0.2",
+    "plop": "^2.7.4"
   }
 }
